@@ -46,7 +46,7 @@ Menu names differ between TVs. You can turn debugging off again when you finish.
 
 ## Privacy
 
-The app has no Internet permission and keeps no history of your screen text. System TTS voices may use the network on their own.
+TV Reader now uses Internet access for GitHub update checks and downloads you choose. GitHub receives connection information, including your IP address. No analytics, tracking, account requirement or screen-text history. Subtitle processing stays on the device; separate TTS engines may use the Internet.
 
 ## Known issues
 
