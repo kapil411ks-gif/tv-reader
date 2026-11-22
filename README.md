@@ -46,7 +46,11 @@ Menu names differ between TVs. You can turn debugging off again when you finish.
 
 ## Privacy
 
-TV Reader now uses Internet access for GitHub update checks and downloads you choose. GitHub receives connection information, including your IP address. No analytics, tracking, account requirement or screen-text history. Subtitle processing stays on the device; separate TTS engines may use the Internet.
+TV Reader uses accessibility access for reading accessible screen text and controls and for remote navigation. Settings stay in local app storage. Our code review found no app-written persistent screen-reading history, but text is held temporarily in memory while reading. Spoken text goes to your selected TTS engine, which may use the Internet.
+
+Language identification and subtitle processing happen on the device. The bundled Google ML Kit SDK may send diagnostic and usage metadata to Google. We have not measured this release's exact network traffic. Update checks and downloads contact GitHub, which receives connection information including your IP address. Optional update alerts are off by default. No TV Reader account is required.
+
+Accessibility is a powerful permission. TV Reader has not had an independent security audit, and we do not claim it is risk-free. You can disable the service in Android Accessibility settings.
 
 ## Known issues
 
